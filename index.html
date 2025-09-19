@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Лабораторна 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Головна сторінка навчального лендінгу: новини, послуги, переваги."/>
+    <title>Лабораторна 2 - Головна</title>
+    <link rel="icon" href="assets/images/favicon.ico"/>
 </head>
 <body>
-<p>Студент: Ковальов Гордій</p>
-<p>Група: ПІ 6.1213-1</p>
+<a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+<header>
+    <h1>Мій навчальний сайт</h1>
+    <nav aria-label="Головна навігація">
+        <ul>
+            <li><a href="index.html" aria-current="page">Головна</a></li>
+            <li><a href="about.html">Про мене</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main">
+    <article>
+        <header>
+            <h2>Моя перша новина</h2>
+        </header>
+        <figure>
+            <img src="assets/images/news.jpg" alt="Фото новини" width="300">
+            <figcaption>Опис новини: коротко про головне</figcaption>
+        </figure>
+        <p>Це приклад новини для навчального сайту. Тут можна написати будь-що.</p>
+    </article>
+
+    <section aria-labelledby="benefits-title">
+        <h3 id="benefits-title">Мої переваги</h3>
+        <ul>
+            <li>Відповідальність</li>
+            <li>Креативність</li>
+            <li>Наполегливість</li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="table-title">
+        <h3 id="table-title">Розклад</h3>
+        <table border="1">
+            <thead>
+            <tr>
+                <th scope="col">День</th>
+                <th scope="col">Предмет</th>
+                <th scope="col">Аудиторія</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Понеділок</td>
+                <td>Web-технології</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>Середа</td>
+                <td>Бази даних</td>
+                <td>202</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<aside>
+    <h3>Корисні посилання</h3>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
+        <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+    </ul>
+</aside>
+
+<footer>
+    <p>© 2025, Студент групи 6.1213-1</p>
+</footer>
 </body>
 </html>

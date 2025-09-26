@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="icon" href="assets/images/favicon.ico"/>
+</head>
+<body>
+<header>
+    <h1>Контакти</h1>
+    <nav aria-label="Головна навігація">
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="about.html">Про мене</a></li>
+            <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Зв’язатися зі мною</h2>
+    <form action="#" method="post">
+        <div class="form-row">
+            <label for="name">Ім’я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ім’я" required minlength="2" maxlength="50" pattern="[А-Яа-яA-Za-z\s'-]+" title="Використовуйте лише букви, пробіли, апостроф та тире">
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Введіть email" required>
+        </div>
+
+        <div class="form-row">
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}" title="Формат: +380XXXXXXXXX" required>
+        </div>
+
+        <div class="form-row">
+            <label for="message">Коментар:</label>
+            <textarea id="message" name="message" rows="4" cols="30" placeholder="Ваше повідомлення..."></textarea>
+        </div>
+
+        <button type="submit">Відправити</button>
+    </form>
+
+    <section>
+        <h3>Мої контакти</h3>
+        <p>Email: student@example.com</p>
+        <p>Телефон: +380123456789</p>
+    </section>
+
+    <aside>
+        <h3>Соцмережі</h3>
+        <ul>
+            <li><a href="https://t.me/username" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+            <li><a href="https://facebook.com/username" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>© 2025, Студент групи 6.1213-1</p>
+</footer>
+</body>
+</html>

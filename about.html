@@ -3,39 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Про мене</title>
+    <title>Лабораторна № 4 | Про нас</title>
     <link rel="icon" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-    <h1 class="header__title">Про мене</h1>
-    <nav class="navigation" aria-label="Головна навігація">
-        <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html" class="navigation__link">Головна</a></li>
-            <li class="navigation__item"><a href="about.html" class="navigation__link" aria-current="page">Про мене</a></li>
-            <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="layout">
+    <header class="header">
+        <h1 class="header-title">Лаб 4</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Головна</a>
+            <a href="about.html" class="nav-link">Про нас</a>
+            <a href="contacts.html" class="nav-link nav-link--cta">Контакти</a>
+        </nav>
+    </header>
 
-<main class="main">
-    <article class="article">
-        <h2 class="article__title">Інформація про мене</h2>
-        <p class="article__text">Мене звати Гордій, я студент групи 6.1213-1. Мої інтереси: програмування, дизайн та спорт.</p>
-    </article>
-</main>
+    <aside class="sidenav">
+        <section class="sidebar" aria-label="Цінності">
+            <h3 class="sidebar-title">Наші цінності</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">Ефективність та Якість</li>
+                <li class="sidebar-item">Безперервне навчання</li>
+                <li class="sidebar-item">Відкрита комунікація</li>
+            </ul>
+        </section>
 
-<aside class="sidebar sidebar--links">
-    <h3>Корисні посилання</h3>
-    <ul>
-        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
-        <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
-    </ul>
-</aside>
+        <section class="sidebar" aria-label="Соціальні мережі">
+            <h3 class="sidebar-title">Соціальні мережі</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="Facebook">Facebook</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="Instagram">Instagram</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="LinkedIn">LinkedIn</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
 
-<footer class="footer">
-    <p>© 2025, Студент групи 6.1213-1</p>
-</footer>
+    <main class="main">
+        <section class="page-content">
+            <article class="article">
+                <h2 class="article-title">Інформація про мене</h2>
+                <p class="article-text">Мене звати **Гордій**, я студент групи **6.1213-1**. Мої основні інтереси охоплюють **програмування**, **дизайн інтерфейсів** та **спортивне орієнтування**. Постійно прагну до практичного застосування знань, особливо в галузі вебтехнологій.</p>
+
+                <h3 class="article-subtitle">Мої навички та підхід</h3>
+                <p class="article-text">У процесі навчання я активно освоюю сучасні стандарти веб-розробки. Ця лабораторна робота демонструє мій досвід у використанні **CSS Grid** для створення загального адаптивного каркасу сторінки та **Flexbox** для компонування елементів у складних компонентах, таких як навігаційні панелі та картки контенту.</p>
+                <p class="article-text">Я віддаю перевагу чистому коду та семантичній HTML-розмітці, що забезпечує високу доступність та легкість підтримки проєктів у майбутньому.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">© 2025, Студент групи 6.1213-1</p>
+            <address class="footer-contacts" aria-label="Наші контакти">
+                <h3 class="footer-contacts-title">Зв'яжіться з нами</h3>
+                <ul class="footer-contacts-list">
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Email:</span>
+                        <a class="footer-link" href="mailto:team@example.com">email@example.com</a>
+                    </li>
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Телефон:</span>
+                        <a class="footer-link" href="tel:+380501112235">+38 (XXX) XXX-XX-XX</a>
+                    </li>
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Адреса:</span>
+                        <span>— Місто, — Вулиця, — Будинок</span>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

@@ -3,59 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій сайт</title>
+    <title>Лабораторна № 4 | Головна</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="header">
-    <h1 class="headerTitle">Мій сайт</h1>
-    <nav class="navigation">
-        <ul class="navigationList">
-            <li class="navigationItem"><a href="index.html" class="navigationLink">Головна</a></li>
-            <li class="navigationItem"><a href="about.html" class="navigationLink">Про мене</a></li>
-            <li class="navigationItem"><a href="contacts.html" class="navigationLink">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="layout">
+    <header class="header">
+        <h1 class="header-title">Лаб 4</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Головна</a>
+            <a href="about.html" class="nav-link">Про нас</a>
+            <a href="contacts.html" class="nav-link nav-link--cta">Контакти</a>
+        </nav>
+    </header>
 
-<main class="main">
-    <article class="article">
-        <h2 class="articleTitle">Новини</h2>
-        <p class="articleText">Це приклад статті для головної сторінки.</p>
-        <figure class="media articleMedia mediaFramed">
-            <img src="assets/images/news.jpg" alt="Фото" width="300">
-            <figcaption>Опис зображення</figcaption>
-        </figure>
-    </article>
+    <aside class="sidenav">
+        <section class="sidebar" aria-label="Цінності">
+            <h3 class="sidebar-title">Наші цінності</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">— Текст...</li>
+                <li class="sidebar-item">— Текст...</li>
+                <li class="sidebar-item">— Текст...</li>
+            </ul>
+        </section>
 
-    <section class="services">
-        <h3 class="servicesTitle">Наші послуги</h3>
-        <table class="servicesTable">
-            <tr class="servicesRow">
-                <th class="servicesHeader">Послуга</th>
-                <th class="servicesHeader">Ціна</th>
-            </tr>
-            <tr class="servicesRow">
-                <td class="servicesCell">Розробка сайту</td>
-                <td class="servicesCell">500$</td>
-            </tr>
-            <tr class="servicesRow">
-                <td class="servicesCell">Підтримка</td>
-                <td class="servicesCell">100$/міс</td>
-            </tr>
-        </table>
-    </section>
-</main>
+        <section class="sidebar" aria-label="Соціальні мережі">
+            <h3 class="sidebar-title">Соціальні мережі</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="Facebook">Facebook</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="Instagram">Instagram</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="LinkedIn">LinkedIn</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
 
-<aside class="sidebar sidebarLinks">
-    <ul>
-        <li><a href="#">Корисне посилання 1</a></li>
-        <li><a href="#">Корисне посилання 2</a></li>
-    </ul>
-</aside>
+    <main class="main">
+        <section class="page-content news-section">
+            <h2 class="section-title">Свіжі новини</h2>
+            <div class="news-list">
+                <article class="card news-card">
+                    <figure class="card-media">
+                        <img src="assets/images/news.jpg" alt="Зображення новини">
+                    </figure>
+                    <h3 class="card-title">Заголовок новини 1</h3>
+                    <div class="card-excerpt">Текст... Текст... Текст... Ми успішно запустили новий великий проєкт. Текст...</div>
+                    <div class="card-meta">
+                        <span>XX.XX.XXXX</span>
+                        <a href="#" class="card-read-more">Читати далі</a>
+                    </div>
+                </article>
 
-<footer class="footer">
-    <p>&copy; 2025 Мій сайт</p>
-</footer>
+                <article class="card news-card">
+                    <figure class="card-media">
+                        <img src="assets/images/news.jpg" alt="Зображення новини">
+                    </figure>
+                    <h3 class="card-title">Заголовок новини 2</h3>
+                    <div class="card-excerpt">Текст... Приєднуйтесь до нашого вебінару, де ми розглянемо можливості CSS Grid. Текст...</div>
+                    <div class="card-meta">
+                        <span>XX.XX.XXXX</span>
+                        <a href="#" class="card-read-more">Читати далі</a>
+                    </div>
+                </article>
+
+                <article class="card news-card">
+                    <figure class="card-media">
+                        <img src="assets/images/news.jpg" alt="Зображення новини">
+                    </figure>
+                    <h3 class="card-title">Заголовок новини 3</h3>
+                    <div class="card-excerpt">Текст... Наша команда починає вивчення фреймворку. Текст... Текст...</div>
+                    <div class="card-meta">
+                        <span>XX.XX.XXXX</span>
+                        <a href="#" class="card-read-more">Читати далі</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">© 2025, Студент групи 6.1213-1</p>
+            <address class="footer-contacts" aria-label="Наші контакти">
+                <h3 class="footer-contacts-title">Зв'яжіться з нами</h3>
+                <ul class="footer-contacts-list">
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Email:</span>
+                        <a class="footer-link" href="mailto:team@example.com">email@example.com</a>
+                    </li>
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Телефон:</span>
+                        <a class="footer-link" href="tel:+380501112235">+38 (XXX) XXX-XX-XX</a>
+                    </li>
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Адреса:</span>
+                        <span>— Місто, — Вулиця, — Будинок</span>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

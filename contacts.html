@@ -3,68 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакти</title>
+    <title>Лабораторна № 4 | Контакти</title>
     <link rel="icon" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="styles.css">
 </head>
-    
+
 <body>
-<header class="header">
-    <h1 class="headerTitle">Контакти</h1>
-    <nav class="navigation" aria-label="Головна навігація">
-        <ul class="navigationList">
-            <li class="navigationItem"><a href="index.html" class="navigationLink">Головна</a></li>
-            <li class="navigationItem"><a href="about.html" class="navigationLink">Про мене</a></li>
-            <li class="navigationItem"><a href="contacts.html" class="navigationLink" aria-current="page">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="layout">
+    <header class="header">
+        <h1 class="header-title">Лаб 4</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Головна</a>
+            <a href="about.html" class="nav-link">Про нас</a>
+            <a href="contacts.html" class="nav-link nav-link--cta">Контакти</a>
+        </nav>
+    </header>
 
-<main class="main">
-    <article class="article">
-        <h2 class="articleTitle">Зв’язатися зі мною</h2>
-        <form action="#" method="post">
-            <div class="formRow">
-                <label for="name">Ім’я:</label>
-                <input type="text" id="name" name="name" placeholder="Введіть ім’я" required minlength="2" maxlength="50" pattern="[А-Яа-яA-Za-z\s'-]+" title="Використовуйте лише букви, пробіли, апостроф та тире">
-            </div>
+    <aside class="sidenav">
+        <section class="sidebar" aria-label="Цінності">
+            <h3 class="sidebar-title">Наші цінності</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">— Текст...</li>
+                <li class="sidebar-item">— Текст...</li>
+                <li class="sidebar-item">— Текст...</li>
+            </ul>
+        </section>
 
-            <div class="formRow">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Введіть email" required>
-            </div>
+        <section class="sidebar" aria-label="Соціальні мережі">
+            <h3 class="sidebar-title">Соціальні мережі</h3>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="Facebook">Facebook</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="Instagram">Instagram</a>
+                </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="#" aria-label="LinkedIn">LinkedIn</a>
+                </li>
+            </ul>
+        </section>
+    </aside>
 
-            <div class="formRow">
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}" title="Формат: +380XXXXXXXXX" required>
-            </div>
+    <main class="main">
+        <section class="page-content contact-section">
+            <h2 class="section-title">Залиште запит</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="contact-form-item">
+                    <label for="name" class="contact-form-label">Ім’я:</label>
+                    <input type="text" id="name" name="name" placeholder="—" required minlength="2" maxlength="50" pattern="[А-Яа-яA-Za-z\s'-]+" title="Використовуйте лише букви, пробіли, апостроф та тире" class="contact-form-input">
+                </div>
 
-            <div class="formRow">
-                <label for="message">Коментар:</label>
-                <textarea id="message" name="message" rows="4" cols="30" placeholder="Ваше повідомлення..."></textarea>
-            </div>
+                <div class="contact-form-item">
+                    <label for="email" class="contact-form-label">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="—" required class="contact-form-input">
+                </div>
 
-            <button type="submit">Відправити</button>
-        </form>
-    </article>
+                <div class="contact-form-item">
+                    <label for="phone" class="contact-form-label">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="—" pattern="\+380[0-9]{9}" title="Формат: +380XXXXXXXXX" required class="contact-form-input">
+                </div>
 
-    <section class="services">
-        <h3 class="servicesTitle">Мої контакти</h3>
-        <p>Email: student@example.com</p>
-        <p>Телефон: +380123456789</p>
-    </section>
-</main>
+                <div class="contact-form-item contact-form-item--full">
+                    <label for="message" class="contact-form-label">Проєкт (деталі):</label>
+                    <textarea id="message" name="message" rows="5" cols="30" placeholder="Текст..." class="contact-form-textarea"></textarea>
+                </div>
 
-<aside class="sidebar sidebarLinks">
-    <h3>Соцмережі</h3>
-    <ul>
-        <li><a href="https://t.me/username" target="_blank" rel="noopener noreferrer">Telegram</a></li>
-        <li><a href="https://facebook.com/username" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-    </ul>
-</aside>
+                <button type="submit" class="btn contact-form-submit">Надіслати запит</button>
+            </form>
+        </section>
+    </main>
 
-<footer class="footer">
-    <p>© 2025, Студент групи 6.1213-1</p>
-</footer>
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">© 2025, Студент групи 6.1213-1</p>
+            <address class="footer-contacts" aria-label="Наші контакти">
+                <h3 class="footer-contacts-title">Зв'яжіться з нами</h3>
+                <ul class="footer-contacts-list">
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Email:</span>
+                        <a class="footer-link" href="mailto:team@example.com">email@example.com</a>
+                    </li>
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Телефон:</span>
+                        <a class="footer-link" href="tel:+380501112235">+38 (XXX) XXX-XX-XX</a>
+                    </li>
+                    <li class="footer-contacts-item">
+                        <span class="footer-label">Адреса:</span>
+                        <span>— Місто, — Вулиця, — Будинок</span>
+                    </li>
+                </ul>
+            </address>
+        </div>
+    </footer>
+</div>
 </body>
 </html>

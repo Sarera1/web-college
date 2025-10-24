@@ -3,59 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мій сайт</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Лабораторна № 4 | Головна</title>
+    <link rel="stylesheet" href="styles.scss">
 </head>
 <body>
-<header class="header">
-    <h1 class="headerTitle">Мій сайт</h1>
-    <nav class="navigation">
-        <ul class="navigationList">
-            <li class="navigationItem"><a href="index.html" class="navigationLink">Головна</a></li>
-            <li class="navigationItem"><a href="about.html" class="navigationLink">Про мене</a></li>
-            <li class="navigationItem"><a href="contacts.html" class="navigationLink">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
+{{#> layout pageTitle="Головна" studentGroup="6.1213-1" studentEmail="email@example.com" }}
 
-<main class="main">
-    <article class="article">
-        <h2 class="articleTitle">Новини</h2>
-        <p class="articleText">Це приклад статті для головної сторінки.</p>
-        <figure class="media articleMedia mediaFramed">
-            <img src="assets/images/news.jpg" alt="Фото" width="300">
-            <figcaption>Опис зображення</figcaption>
-        </figure>
-    </article>
+<section class="page-content news-section">
+    <h2 class="section-title">Свіжі новини</h2>
+    <div class="news-list">
+        <article class="card news-card">
+            <figure class="card-media">
+                <picture>
+                    <source type="image/avif" srcset="/assets/images/news.avif">
+                    <source type="image/webp" srcset="/assets/images/news.webp">
+                    <img src="/assets/images/news.avif" alt="Зображення новини" loading="lazy" decoding="async" width="640" height="360">
+                </picture>
+            </figure>
+            <h3 class="card-title">Заголовок новини 1</h3>
+            <div class="card-excerpt">Текст... Текст... Текст... Ми успішно запустили новий великий проєкт. Текст...</div>
+            <div class="card-meta">
+                <span>XX.XX.XXXX</span>
+                <a href="#" class="card-read-more">Читати далі</a>
+            </div>
+        </article>
 
-    <section class="services">
-        <h3 class="servicesTitle">Наші послуги</h3>
-        <table class="servicesTable">
-            <tr class="servicesRow">
-                <th class="servicesHeader">Послуга</th>
-                <th class="servicesHeader">Ціна</th>
-            </tr>
-            <tr class="servicesRow">
-                <td class="servicesCell">Розробка сайту</td>
-                <td class="servicesCell">500$</td>
-            </tr>
-            <tr class="servicesRow">
-                <td class="servicesCell">Підтримка</td>
-                <td class="servicesCell">100$/міс</td>
-            </tr>
-        </table>
-    </section>
-</main>
+        <article class="card news-card">
+            <figure class="card-media">
+                <picture>
+                    <source type="image/avif" srcset="/assets/images/news.avif">
+                    <source type="image/webp" srcset="/assets/images/news.webp">
+                    <img src="/assets/images/news.avif" alt="Зображення новини" loading="lazy" decoding="async" width="640" height="360">
+                </picture>
+            </figure>
+            <h3 class="card-title">Заголовок новини 2</h3>
+            <div class="card-excerpt">Текст... Приєднуйтесь до нашого вебінару, де ми розглянемо можливості CSS Grid. Текст...</div>
+            <div class="card-meta">
+                <span>XX.XX.XXXX</span>
+                <a href="#" class="card-read-more">Читати далі</a>
+            </div>
+        </article>
 
-<aside class="sidebar sidebarLinks">
-    <ul>
-        <li><a href="#">Корисне посилання 1</a></li>
-        <li><a href="#">Корисне посилання 2</a></li>
-    </ul>
-</aside>
+        <article class="card news-card">
+            <figure class="card-media">
+                <picture>
+                    <source type="image/avif" srcset="/assets/images/news.avif">
+                    <source type="image/webp" srcset="/assets/images/news.webp">
+                    <img src="/assets/images/news.avif" alt="Зображення новини" loading="lazy" decoding="async" width="640" height="360">
+                </picture>
+            </figure>
+            <h3 class="card-title">Заголовок новини 3</h3>
+            <div class="card-excerpt">Текст... Наша команда починає вивчення фреймворку. Текст... Текст...</div>
+            <div class="card-meta">
+                <span>XX.XX.XXXX</span>
+                <a href="#" class="card-read-more">Читати далі</a>
+            </div>
+        </article>
+    </div>
+</section>
 
-<footer class="footer">
-    <p>&copy; 2025 Мій сайт</p>
-</footer>
+{{/layout}}
+<script type="module" src="/src/main.js"></script>
 </body>
 </html>

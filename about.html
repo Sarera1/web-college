@@ -3,39 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Про мене</title>
+    <title>Лабораторна № 4 | Про нас</title>
     <link rel="icon" href="assets/images/favicon.ico"/>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.scss">
 </head>
 <body>
-<header class="header">
-    <h1 class="header__title">Про мене</h1>
-    <nav class="navigation" aria-label="Головна навігація">
-        <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html" class="navigation__link">Головна</a></li>
-            <li class="navigation__item"><a href="about.html" class="navigation__link" aria-current="page">Про мене</a></li>
-            <li class="navigation__item"><a href="contacts.html" class="navigation__link">Контакти</a></li>
-        </ul>
-    </nav>
-</header>
+{{#> layout pageTitle="Про нас" studentGroup="6.1213-1" studentEmail="email@example.com" }}
 
-<main class="main">
+<section class="page-content">
     <article class="article">
-        <h2 class="article__title">Інформація про мене</h2>
-        <p class="article__text">Мене звати Гордій, я студент групи 6.1213-1. Мої інтереси: програмування, дизайн та спорт.</p>
+        <h2 class="article-title">Інформація про мене</h2>
+        <p class="article-text">Мене звати **Гордій**, я студент групи **6.1213-1**. Мої основні інтереси охоплюють **програмування**, **дизайн інтерфейсів** та **спортивне орієнтування**. Постійно прагну до практичного застосування знань, особливо в галузі вебтехнологій.</p>
+
+        <h3 class="article-subtitle">Мої навички та підхід</h3>
+        <p class="article-text">У процесі навчання я активно освоюю сучасні стандарти веб-розробки. Ця лабораторна робота демонструє мій досвід у використанні **CSS Grid** для створення загального адаптивного каркасу сторінки та **Flexbox** для компонування елементів у складних компонентах, таких як навігаційні панелі та картки контенту.</p>
+        <p class="article-text">Я віддаю перевагу чистому коду та семантичній HTML-розмітці, що забезпечує високу доступність та легкість підтримки проєктів у майбутньому.</p>
     </article>
-</main>
+</section>
 
-<aside class="sidebar sidebar--links">
-    <h3>Корисні посилання</h3>
-    <ul>
-        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
-        <li><a href="https://www.wikipedia.org" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
-    </ul>
-</aside>
-
-<footer class="footer">
-    <p>© 2025, Студент групи 6.1213-1</p>
-</footer>
+{{/layout}}
 </body>
 </html>

@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme static {
+    --color-bg: #ffffff;
+    --color-fg: #0f0f0f;
+    --color-muted: #7d7d7d;
+    --color-brand: #007bff;
+}
+    @custom-variant dark (&:where(.dark, .dark *));
+
+
+@layer components {
+    .card {
+        @apply p-4 rounded-lg shadow bg-[color:var(--color-bg)] text-[color:var(--color-fg)];
+    }
+
+    .card__meta {
+        @apply text-sm text-[color:var(--color-muted)];
+    }
+
+    .btn-brand {
+        @apply bg-[color:var(--color-brand)] text-white px-3 py-2 rounded hover:opacity-80;
+    }
+}
+
+body {
+  @apply bg-white text-black;
+}
+
+.dark body {
+  @apply bg-gray-900 text-white;
+}

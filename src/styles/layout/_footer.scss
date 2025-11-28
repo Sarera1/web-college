@@ -1,0 +1,42 @@
+.footer { grid-area: footer; }
+
+.footer {
+  background: var(--fg);
+  color: white;
+  padding: var(--space-6) var(--space-8);
+}
+
+.footer a {
+  color: #a7d9c6;
+}
+
+.footer-inner {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+  align-items: start;
+  max-width: var(--container);
+  margin: auto;
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.95rem;
+  order: 2;
+}
+
+.footer-group-name {
+  color: var(--brand-100);
+  font-weight: 700;
+}
+
+.footer-contacts-title {
+  margin: 0 0 var(--space-3);
+  font-size: 1.1rem;
+  color: var(--brand);
+}
+
+.footer-label {
+  color: #cccccc;
+  white-space: nowrap;
+}

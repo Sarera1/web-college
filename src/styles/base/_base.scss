@@ -1,0 +1,19 @@
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: var(--fs-body);
+}
+a {
+  color: var(--brand); text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover, a:focus-visible {
+  text-decoration: underline;
+  color: var(--brand-600);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна № 4 | Контакти</title>
+    <link rel="icon" href="assets/images/favicon.ico"/>
+    <link rel="stylesheet" href="src/styles.scss">
+</head>
+
+<body>
+
+<section class="page-content contact-section">
+    <h2 class="section-title">Залиште запит</h2>
+    <form action="#" method="post" class="contact-form">
+        <div class="contact-form-item">
+            <label for="name" class="contact-form-label">Ім’я:</label>
+            <input type="text" id="name" name="name" placeholder="—" required minlength="2" maxlength="50" pattern="[А-Яа-яA-Za-z\s'-]+" title="Використовуйте лише букви, пробіли, апостроф та тире" class="contact-form-input">
+        </div>
+
+        <div class="contact-form-item">
+            <label for="email" class="contact-form-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="—" required class="contact-form-input">
+        </div>
+
+        <div class="contact-form-item">
+            <label for="phone" class="contact-form-label">Телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="—" pattern="\+380[0-9]{9}" title="Формат: +380XXXXXXXXX" required class="contact-form-input">
+        </div>
+
+        <div class="contact-form-item contact-form-item--full">
+            <label for="message" class="contact-form-label">Проєкт (деталі):</label>
+            <textarea id="message" name="message" rows="5" cols="30" placeholder="Текст..." class="contact-form-textarea"></textarea>
+        </div>
+
+        <button type="submit" class="btn contact-form-submit">Надіслати запит</button>
+    </form>
+</section>
+
+</div>
+</body>
+</html>

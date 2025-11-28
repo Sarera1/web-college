@@ -1,0 +1,28 @@
+@media (min-width: 640px) {
+  .layout {
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+            "header header"
+            "sidenav main"
+            "footer footer";
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr minmax(220px, 1fr);
+  }
+
+  .footer-text {
+    order: initial;
+  }
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 280px 1fr;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr minmax(288px, 1fr);
+  }
+}

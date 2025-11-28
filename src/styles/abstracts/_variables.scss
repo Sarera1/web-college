@@ -1,0 +1,22 @@
+:root {
+  --brand: #4a8d6e;
+  --brand-600: #3c7a5c;
+  --brand-100: #eaf1ee;
+
+  --fg: #333333;
+  --fg-muted: #6c757d;
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --border: #dee2e6;
+
+  --space-1: .25rem; --space-2: .5rem; --space-3: .75rem;
+  --space-4: 1rem; --space-6: 1.5rem; --space-8: 2rem;
+  --radius-1: 4px;
+  --radius-2: 8px;
+  --shadow-1: 0 4px 10px rgba(0,0,0,.04);
+  --container: 1100px;
+
+  --fs-h1: clamp(1.6rem, 1.2rem + 2.2vw, 2.2rem);
+  --fs-h2: clamp(1.25rem, 1.05rem + 1.2vw, 1.6rem);
+  --fs-body: clamp(1rem, 0.94rem + 0.5vw, 1.125rem);
+}
